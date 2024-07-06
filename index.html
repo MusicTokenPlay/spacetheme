@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="user-info">
+
+            <img src="img/m00.png" alt="User Icon">
+            <span>Santa</span>
+        </div>
+        <div class="menu-button" onclick="toggleMenu()">Menu</div>
+    </header>
+    <div class="container" id="apli01">
+        <table>
+            <tr>
+                <td><img src="img/n1.png" alt="Coin Icon"><span id="coin-counter">0</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="menu-window" id="menu-window">
+        <a href="#">Фейсбук</a>
+        <a href="#">Ютуб</a>
+        <a href="#">Таитер</a>
+        <a href="#">Телеграм</a>
+        <a href="#">Об игре</a>
+        <a href="#">Кабинет</a>
+        <button class="go-button" onclick="addMillionCoins()">go</button>
+        
+    </div>
+    <div class="container" id="apli02">
+        <div class="circle" id="circle1" data-value="80" data-level="1" onclick="incrementCounter(event, this)">
+            <span class="level-display">Level 1</span>
+        </div>
+        <div class="circle" id="circle2" data-value="100" data-level="1" onclick="incrementCounter(event, this)">
+            <span class="level-display">Level 1</span>
+        </div>
+        <div class="circle" id="circle3" data-value="120" data-level="1" onclick="incrementCounter(event, this)">
+            <span class="level-display">Level 1</span>
+        </div>
+    </div>
+    <div class="container" id="apli03">
+        <div class="button" id="button1" style="background-image: url('img/a3.png');" onclick="handleButtonClick(80)">
+            <span>100</span>
+        </div>
+        <div class="button" id="button2" style="background-image: url('img/a2.png');" onclick="handleButtonClick(100)">
+            <span>100</span>
+        </div>
+        <div class="button" id="button3" style="background-image: url('img/a4.png');" onclick="handleButtonClick(120)">
+            <span>100</span>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
